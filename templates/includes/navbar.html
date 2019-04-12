@@ -1,0 +1,55 @@
+{% load static %}
+
+{% block navbar %}
+
+<nav class="navbar navbar-expand-lg but-b c-shadow-medium-s fixed-top">
+  <a class="navbar-brand c-shadow-circular-h" href="{% url 'home' %}"><img src="{% static 'img/maxresdefault.jpg' %}" alt="EventMan" class="c-header-brand"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" >
+    <span class="navbar-toggler-icon c-shadow-medium-h c-corner-bottom-sm">
+      <i class="fas fa-align-justify" style="color: #fffafa"></i>
+    </span>
+  </button>
+
+  <div class="collapse navbar-collapse ml-md-5" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item c-shadow-small-h but-c c-corner-bottom-sm">
+        <a class="nav-link c-text-normal" href="{% url 'home' %}">Home</a>
+      </li>
+      {% if user.is_authenticated %}
+      <li class="nav-item dropdown c-shadow-small-h c-corner-bottom-sm ml-md-5 but-c">
+        <a class="nav-link dropdown-toggle c-text-normal" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <img src="{% static 'img/avatar.png' %}" alt="Freedok Avatar" class="c-header-avatar">
+          <span class="c-text-normal">Hello {{ user.username|title }}</span>
+        </a>
+        <div class="dropdown-menu but-b c-shadow-small-h" aria-labelledby="navbarDropdown" id="show-item-drop">
+          <a class="dropdown-item but-c c-shadow-medium-h c-corner-bottom-sm" href="{% url 'event' %}"><i class="fas fa-user" style="float: right; font-size: 20px;"></i>Events</a>
+          <a class="dropdown-item but-c c-shadow-medium-h c-corner-bottom-sm" href="{% url 'location' %}"><i class="fas fa-cogs" style="float: right; font-size: 20px;"></i> Locations</a>
+          <!-- <div class="dropdown-divider"></div> -->
+          <a class="dropdown-item but-c c-shadow-medium-h c-corner-bottom-sm" href="{% url 'logout' %}"><i class="fas fa-sign-out-alt" style="float: right; font-size: 20px;"></i>Logout</a>
+        </div>
+      </li>
+      {% else %}
+      <li class="nav-item c-shadow-small-h c-corner-bottom-sm ml-md-5 but-c">
+        <a class="nav-link c-text-normal" href="{% url 'login' %}">Login to your Account</a>
+      </li>
+      <li class="nav-item c-shadow-small-h c-corner-bottom-sm ml-md-1 but-c">
+        <a class="nav-link c-text-normal" href="{% url 'signup' %}">Register to proceed</a>
+      </li>
+      {% endif %}
+    </ul><!-- 
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2 c-shadow-small-h c-corner-bottom-sm" type="search" placeholder="Search for your classmates" aria-label="Search">
+      <center><button class="btn my-2 my-sm-0 c-shadow-small-h c-corner-bottom-sm but-b" type="submit" style="color: #fff" ><i class="fas fa-search"></i>Search</button></center>
+    </form> -->
+  </div>
+</nav>
+
+<style>
+  .dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; // remove the gap so it doesn't close
+ }
+</style>
+
+
+{% endblock navbar %}

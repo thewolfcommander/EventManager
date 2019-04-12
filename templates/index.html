@@ -1,0 +1,45 @@
+{% extends 'base_core.html' %}
+
+
+{% block title %}
+We think, You Gain
+{% endblock title %}
+
+{% block content %}
+<div class="container-fluid c-shadow-medium-s c-content-back c-margin-top-resp pt-5" style="min-height: 600px; margin-bottom: 50px; margin-top: 70px;">
+	{% block breadcrumb %}
+
+        {% endblock breadcrumb %}
+    <div class="row">
+    	<div class="col-md-9">
+    		<h2 class="display-4">School of Engineering and Technology</h2><br>
+    		<br>
+    		<hr>
+    		<br>
+    		<div class="">
+    			<img src="https://i.ytimg.com/vi/iSD9Zroim7Q/maxresdefault.jpg" alt="" width="100%">
+    		</div>
+    		<br>
+    		<br>
+    		<p class="lead text-bold"><strong>“The Secret of getting ahead is getting started...”</strong><br><br>
+We are the students of School of Engineering and Technology and we can and we will build and create for the future of the India and our society. We believe that whatever the mind of a man can concieve and believe, it can achieve. Also people do not decide to become Extraordinary... They decide to accomplish extraordinary things and that's we are doing here at HNBGU, and you are in the world of Engineers of SOET.<br><br>
+Actually this is an online portal where you can publish and store all your projects and their related stuffs like Synopsis, Reports and your innovative ideas too in a very secure environment out there. Just login to your account and get started.
+</p>
+<br>
+<br>
+<center><a class="btn c-back-normal c-text-normal c-shadow-small-h mt-1" href="{% url 'signup' %}">Get started in just 10 secs</a></center>
+<br>
+<br>
+
+            <h4><strong>Our beautiful campus</strong></h4><br>
+            <div class="">
+                <iframe width="100%" height="400" src="https://www.youtube.com/embed/D-ntYyOe7Zs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+    	</div>
+
+    	<div class="col-md-3">
+    		{% include 'includes/mainsidebar.html' %}
+    	</div>
+    </div>
+</div>
+{% endblock content %}

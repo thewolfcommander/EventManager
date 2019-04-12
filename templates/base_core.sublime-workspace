@@ -1,0 +1,363 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"write",
+				"write_only"
+			],
+			[
+				"word_tok",
+				"word_tokenize"
+			],
+			[
+				"mobilr",
+				"mobile_country_code"
+			],
+			[
+				"mobile_",
+				"mobile_number"
+			],
+			[
+				"mobile_numbe",
+				"mobile_number__iexact"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "base_core.html",
+			"settings":
+			{
+				"buffer_size": 3328,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/User/Documents/GitHub/CompanyProject/schoolID01/templates/registration/registration_form.html",
+		"/C/Users/User/Documents/GitHub/CompanyProject/schoolID01/templates/base.html",
+		"/C/Users/User/Documents/GitHub/CompanyProject/schoolID01/core/views.py",
+		"/C/Users/User/Documents/GitHub/CompanyProject/schoolID01/templates/includes/footer.html",
+		"/C/Users/User/Documents/GitHub/CompanyProject/schoolID01/templates/includes/navbar.html",
+		"/C/Users/User/Documents/GitHub/CompanyProject/schoolID01/templates/index.html",
+		"/C/Users/User/Documents/GitHub/CompanyProject/schoolID01/core/models.py",
+		"/C/Users/User/Documents/GitHub/CompanyProject/schoolID01/schoolID01/settings.py",
+		"/C/Users/User/Documents/development/Projects/2019/Freedok-UI/Dashboard/templates/fuck.html",
+		"/C/Users/User/Documents/GitHub/CompanyProject/schoolID01/schoolID01/urls.py",
+		"/C/Users/User/Documents/GitHub/CompanyProject/schoolID01/core/urls.py",
+		"/C/Users/User/Documents/development/Projects/2019/Freedok-UI/Dashboard/templates/base_core.html",
+		"/C/Users/User/Documents/GitHub/Demo/G0002_00/index.html",
+		"/C/Users/User/Documents/GitHub/goodVUD-WEB/index.html",
+		"/C/Users/User/Documents/GitHub/goodVUD-WEB/contact.html",
+		"/C/Users/User/Documents/GitHub/goodVUD-WEB/404.html",
+		"/C/Users/User/Documents/GitHub/goodVUD-WEB/login.html",
+		"/C/Users/User/Documents/GitHub/goodVUD-WEB/register.html",
+		"/C/Users/User/Documents/GitHub/goodVUD-WEB/css/style.css",
+		"/C/Users/User/Documents/GitHub/goodVUD-WEB/js/video.js",
+		"/C/Users/User/Documents/GitHub/goodVUD-WEB/css/video.css",
+		"/F/Xampp/htdocs/index.php",
+		"/C/Users/User/Documents/GitHub/Demo/G0004_00/about-us.html",
+		"/C/Users/User/Documents/GitHub/Demo/G0004_00/article.html",
+		"/C/Users/User/Documents/GitHub/Demo/G0004_00/articles.html",
+		"/C/Users/User/Documents/GitHub/Demo/G0004_00/index.html",
+		"/C/Users/User/Documents/GitHub/Demo/G0004_00/sitemap.html",
+		"/C/Users/User/Documents/GitHub/Demo/G0004_00/contact-us.html",
+		"/C/Users/User/Documents/GitHub/Demo/G0003_00/index.html",
+		"/C/Users/User/Documents/GitHub/Demo/G0003_00/admissions.html",
+		"/C/Users/User/Documents/GitHub/Demo/G0003_00/contacts.html",
+		"/C/Users/User/Documents/GitHub/Demo/G0003_00/courses.html",
+		"/C/Users/User/Documents/GitHub/Demo/G0003_00/programs.html",
+		"/C/Users/User/Documents/GitHub/Demo/G0003_00/teachers.html",
+		"/C/Users/User/Documents/GitHub/Demo/G0002_00/about.html",
+		"/C/Users/User/Documents/GitHub/Demo/G0002_00/admissions.html",
+		"/C/Users/User/Documents/GitHub/Demo/G0002_00/blog.html",
+		"/C/Users/User/Documents/GitHub/Demo/G0002_00/career.html",
+		"/C/Users/User/Documents/GitHub/Demo/G0002_00/contact-us.html",
+		"/C/Users/User/Documents/GitHub/Demo/G0002_00/school-calendar.html",
+		"/C/Users/User/Documents/GitHub/Demo/G0002_00/training-courses.html",
+		"/D/Downloads/G0001_00/science/events.html",
+		"/D/Downloads/G0001_00/science/index.html",
+		"/D/Downloads/G0001_00/science/contacts.html",
+		"/D/Downloads/G0001_00/science/researches.html",
+		"/D/Downloads/G0001_00/science/services.html",
+		"/C/Users/User/Documents/GitHub/Demo/G0001_0007/index.html",
+		"/C/Users/User/Documents/GitHub/Demo/G0001_0007/js/gmaps.js",
+		"/C/Users/User/Documents/GitHub/Demo/G0001_0007/css/responsive.css",
+		"/C/Users/User/Documents/GitHub/Demo/G0001_0007/css/main.css",
+		"/D/Downloads/Website themes/G0001_0007/index.html",
+		"/C/Users/User/Documents/GitHub/goodVUD-WEB/category/business_website.html",
+		"/C/Users/User/Documents/GitHub/goodVUD-WEB/pages/404.html",
+		"/D/Downloads/Website themes/0000READY/4. Nantes Free Website Template - Free-CSS.com/nantes/index.html",
+		"/C/Users/User/Documents/GitHub/goodVUD-WEB/css/form.css",
+		"/D/Downloads/Website themes/0000READY/4. Nantes Free Website Template - Free-CSS.com/nantes/css/style.css",
+		"/C/Users/User/AppData/Roaming/Sublime Text 3/Packages/LiveReload/LiveReload.sublime-settings",
+		"/D/Downloads/Website themes/0000READY/1. Creative Free Website Template - Free-CSS.com/startbootstrap-creative-gh-pages/index.html",
+		"/D/Downloads/Website themes/4. Nantes Free Website Template - Free-CSS.com/nantes/index.html",
+		"/D/Downloads/Website themes/1. Creative Free Website Template - Free-CSS.com/startbootstrap-creative-gh-pages/index.html",
+		"/D/Downloads/Website themes/1. Creative Free Website Template - Free-CSS.com/startbootstrap-creative-gh-pages/css/creative.min.css",
+		"/D/Downloads/Website themes/1. Creative Free Website Template - Free-CSS.com/startbootstrap-creative-gh-pages/css/creative.css",
+		"/D/Downloads/Website themes/1. Creative Free Website Template - Free-CSS.com/startbootstrap-creative-gh-pages/less/variables.less",
+		"/F/Xampp/htdocs/ecommerce/index.php",
+		"/F/Xampp/htdocs/ecommerce/includes/navbar.php",
+		"/F/Xampp/htdocs/ecommerce/includes/footer.php",
+		"/F/Xampp/htdocs/ecommerce/includes/header.php",
+		"/G/Courses/[WEBXXX] WEB DEVELOPMENT/[WEB000] Udemy - python-and-django-full-stack-web-developer-bootcamp/23 First Clone Project/163 Blog-Clone-Project/Blog_Clone_Project/blog_project/blog/views.py",
+		"/C/Users/User/Documents/development/Projects/2019/Freedok-UI/Dashboard/core/models.py",
+		"/G/Courses/[WEBXXX] WEB DEVELOPMENT/[WEB000] Udemy - python-and-django-full-stack-web-developer-bootcamp/23 First Clone Project/163 Blog-Clone-Project/Blog_Clone_Project/blog_project/mysite/urls.py",
+		"/C/Users/User/Documents/development/Projects/2019/Freedok-UI/chatapp-frontend/src/components/Chat.vue",
+		"/C/Users/User/Documents/development/Projects/2019/Freedok-UI/chatapp-frontend/src/components/UserAuth.vue",
+		"/C/Users/User/Documents/development/Projects/2019/Freedok-UI/chatapp-frontend/index.html",
+		"/C/Users/User/Documents/development/Projects/2019/Freedok-UI/chatapp-frontend/src/router/index.js",
+		"/C/Users/User/Documents/development/Projects/2019/Freedok-UI/Dashboard/chatapp/views.py",
+		"/C/Users/User/Documents/development/Projects/2019/Freedok-UI/Dashboard/src/urls.py",
+		"/C/Users/User/Documents/development/Projects/2019/Freedok-UI/Dashboard/chatapp/urls.py",
+		"/C/Users/User/Documents/development/Projects/2019/Freedok-UI/Dashboard/src/settings.py",
+		"/C/Users/User/Documents/development/Projects/Feb 2019/Operating System/main.py",
+		"/C/Users/User/Documents/development/Projects/Feb 2019/Operating System/components/authentication/main.py",
+		"/C/Users/User/Documents/development/Projects/Feb 2019/Operating System/components/authentication/__init__.py",
+		"/C/Users/User/Documents/development/Projects/Feb 2019/Operating System/components/patterns/alphabets.py",
+		"/C/Users/User/Documents/development/Projects/Feb 2019/Operating System/components/patterns/__init__.py",
+		"/C/Users/User/Documents/development/DjangoTemplateProject/src/src/settings.py",
+		"/C/Users/User/Documents/development/GitHub/2018/biggame023/fiv001/urls.py",
+		"/C/Users/User/Documents/development/DjangoTemplateProject/src/core/views.py",
+		"/C/Users/User/Documents/development/DjangoTemplateProject/src/src/urls.py",
+		"/C/Users/User/Documents/development/image_urls.txt",
+		"/C/Users/User/Documents/development/downloader.py",
+		"/C/Users/User/AppData/Roaming/Sublime Text 3/Packages/FileReloader/README.md",
+		"/C/Users/User/Documents/development/DjangoTemplateProject/src/core/urls.py",
+		"/C/Users/User/Documents/development/checkPandigital.py",
+		"/C/Users/User/Documents/development/GitHub/2018/duit/django-duit-backend/core/serializers.py",
+		"/C/Users/User/Documents/development/GitHub/2018/duit/django-duit-backend/core/views.py",
+		"/C/Users/User/Documents/development/GitHub/2018/duit/django-duit-backend/core/urls.py",
+		"/C/Users/User/Documents/development/GitHub/2018/duit/django-duit-backend/duitdashboard/settings.py",
+		"/C/Users/User/Documents/development/GitHub/2018/duit-react-native1/app/screens/login/mobile_otp_screen.js",
+		"/G/Linux Backup/Documents/development/Projects/2019/Freedok-UI/Dashboard/cms/admin.py",
+		"/G/Linux Backup/Documents/development/Projects/2019/Freedok-UI/Dashboard/cms/views.py",
+		"/G/Linux Backup/Documents/development/Projects/2019/Freedok-UI/Dashboard/src/settings.py",
+		"/G/Linux Backup/Documents/development/Projects/2019/Freedok-UI/Dashboard/cms/models.py",
+		"/G/Linux Backup/Documents/development/Projects/2019/Freedok-UI/Dashboard/templates/cms/cms_home.html",
+		"/G/Linux Backup/Documents/development/Projects/2019/Freedok-UI/Dashboard/src/urls.py",
+		"/G/Linux Backup/Documents/development/Projects/2019/Freedok-UI/Dashboard/cms/urls.py",
+		"/G/Linux Backup/Documents/development/Projects/2019/Freedok-UI/Dashboard/.gitignore",
+		"/C/Users/User/Documents/development/Jupyter Notebook/Feb 2019/Writing Commands to operate terminal in python _7_feb_3_54pm.ipynb",
+		"/C/Users/User/Documents/development/Projects/Feb 2019/Text_to_speech_date_7/testing_sppech.py",
+		"/C/Users/User/Documents/development/Projects/Feb 2019/ChatBot_date_6/Chatbot.py",
+		"/C/Users/User/Documents/development/Projects/Feb 2019/ChatBot_date_6/Train.py",
+		"/C/Users/User/Documents/development/Projects/Feb 2019/ChatBot_date_6/chatbot.txt",
+		"/C/Users/User/AppData/Roaming/Sublime Text 3/Packages/CMD/cmd.py",
+		"/C/Users/User/AppData/Roaming/Sublime Text 3/Packages/CMD/Context.sublime-menu",
+		"/C/Users/User/AppData/Roaming/Sublime Text 3/Packages/Terminal/Default (Windows).sublime-keymap",
+		"/C/Users/User/AppData/Roaming/Sublime Text 3/Packages/Terminal/Terminal.sublime-settings",
+		"/C/Users/User/AppData/Roaming/Sublime Text 3/Packages/User/Terminal (Windows).sublime-settings",
+		"/G/Linux Backup/Documents/development/Projects/2019/Freedok-UI/Dashboard/core/views.py",
+		"/G/Linux Backup/Documents/development/Projects/2019/Freedok-UI/Dashboard/templates/boards/new_board.html",
+		"/G/Linux Backup/Documents/development/Projects/2019/Freedok-UI/Dashboard/core/urls.py",
+		"/G/Linux Backup/Documents/development/Projects/2019/Freedok-UI/Dashboard/templates/boards/topic_posts.html",
+		"/G/Linux Backup/Documents/development/Projects/2019/Freedok-UI/Dashboard/templates/boards/home.html",
+		"/C/Users/User/Documents/development/GitHub/2018/duit-react-native1/app/screens/login/index.js",
+		"/G/Linux Backup/Documents/development/Projects/2019/Freedok-UI/Dashboard/core/forms.py",
+		"/C/Users/User/Documents/development/GitHub/2018/duit/django-duit-backend/core/auth/views.py",
+		"/C/Users/User/Documents/development/GitHub/2018/duit/django-duit-backend/core/signals.py",
+		"/C/Users/User/Documents/development/GitHub/2018/duit/django-duit-backend/core/models.py",
+		"/C/Users/User/Documents/development/GitHub/2018/duit/django-duit-backend/core/permissions.py",
+		"/C/Users/User/AppData/Roaming/Sublime Text 3/Packages/User/auto_save.sublime-settings",
+		"/C/Users/User/AppData/Roaming/Sublime Text 3/Packages/auto-save/auto_save.sublime-settings"
+	],
+	"find":
+	{
+		"height": 29.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "base_core.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3328,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								3328
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 29.0
+	},
+	"input":
+	{
+		"height": 69.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "base_core.sublime-project",
+	"replace":
+	{
+		"height": 54.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 326.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

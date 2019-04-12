@@ -1,0 +1,63 @@
+{% extends 'base_core.html' %}
+
+
+{% block title %}
+Dive Into Your Profile
+{% endblock title %}
+
+{% block content %}
+<div class="container-fluid c-shadow-medium-s c-content-back c-margin-top-resp pt-5" style="min-height: 600px; margin-bottom: 50px; margin-top: 70px;">
+	{% block breadcrumb %}
+
+    {% endblock breadcrumb %}
+
+<div class="row c-profile-main p-3">
+	{% include 'includes/sidebarProfile.html' %}
+
+	{% if events %}
+
+<div class="col-md-9">
+	
+	<h4 class="display-4">Locations</h4>
+	<div class="row">
+		{% for obj in events %}
+		<div class="col-md-4 my-3">
+			<div class="card-group c-shadow-small-h">
+				  <div class="card">
+				    <img src="{{ obj.event_image.url }}" class="card-img-top" alt="{{ obj.event_name }}" height="150px">
+				    <div class="card-body">
+				      <h5 class="card-title"><strong>{{ obj.event_name }}</strong></h5>
+				      <p class="card-text">{{ obj.event_description|striptags|slice:":40" }}</p>
+				      <p class="card-text"><small class="text-muted">Last updated {{ obj.updated_date|timesince }} ago</small></p>
+				    </div>
+				    <div class="card-footer">
+				    	<a href="{% url 'event_detail' obj.pk %}" target="_blank" class="btn btn-block btn-info c-shadow-small-h">Know more</a>
+				    </div>
+				  </div>
+
+			</div>
+		</div>
+		{% endfor %}
+	</div>
+</div>
+
+	{% else %}
+	<p class="lead">Sorry No events found for you. Please retry after some times</p>
+	{% endif %}
+</div>
+
+<script>
+	function printDivProfile(divName) {
+		var printContents = document.getElementById(divName).innerHTML;
+		var originalContents = document.body.innerHTML;
+
+		document.body.innerHTML = printContents;
+		window.print();
+
+		document.body.content = originalContents;
+	}
+</script>
+
+</div>
+
+{% endblock content %}

@@ -1,0 +1,39 @@
+.m-back-normal {
+	background: #4776e6;
+	background: -webkit-linear-gradient(to right, #4776e6, #8354e9);
+	background: linear-gradient(to right, #4776e6, #8354e9);
+}
+
+.m-back-special {
+	background: #1d976c;
+	background: -webkit-linear-gradient(to right, #1d976c, #93f9b9);
+	background: linear-gradient(to right, #1d976c, #93f9b9);	
+}
+
+.but-a {
+	background: #eb3349;
+	background: -webkit-linear-gradient(to right, #eb3349, #f45c43);
+	background: linear-gradient(to right, #eb3349, #f45c43);
+}
+
+
+.but-b {
+	background: #4cb8c4;
+	background: -webkit-linear-gradient(to right, #4cb8c4, #3cd3ad);
+	background: linear-gradient(to right, #4cb8c4, #3cd3ad);
+}
+
+
+.but-c {
+	background: #ff512f;
+	background: -webkit-linear-gradient(to right, #ff512f, #f09819);
+	background: linear-gradient(to right, #ff512f, #f09819);
+}
+
+
+.but-d {
+	background: #d31027;
+	background: -webkit-linear-gradient(to right, #d31027, #ea384d);
+	background: linear-gradient(to right, #d31027, #ea384d);
+}
+

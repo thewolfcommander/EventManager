@@ -1,0 +1,186 @@
+{% extends 'base_core.html' %}
+
+
+{% block title %}
+Dive Into Your Profile
+{% endblock title %}
+
+{% block content %}
+<div class="container-fluid c-shadow-medium-s c-content-back c-margin-top-resp pt-5" style="min-height: 600px; margin-bottom: 50px; margin-top: 70px;">
+	{% block breadcrumb %}
+
+    {% endblock breadcrumb %}
+
+<div class="row c-profile-main p-3">
+	{% include 'includes/sidebarProfile.html' %}
+
+	{% if obj %}
+
+<div class="col-md-9">
+	<div class="row">
+		<div class="col-md-12 my-3">
+			<div class="card-group c-shadow-small-h">
+				  <div class="card">
+				    <img src="{{ obj.location_image.url }}" class="card-img-top" alt="{{ obj.location_name }}" height="450px">
+				    <div class="card-body">
+				      <h5 class="card-title"><strong>{{ obj.location_name }}</strong></h5>
+
+				      <p style="font-size: 11px;" class="text-muted">By {{ obj.location_added_by }}</p>
+
+				      <p class="card-text"><small class="text-muted">Last updated {{ obj.updated_date|timesince }} ago</small></p>
+				      <hr>
+
+				      <br>
+				      <p class="card-text">{{ obj.location_description }}</p>
+				    </div>
+				    <table class="table">
+					  <thead class="but-b c-text-normal">
+					    <tr>
+					      <th scope="col">Location Name</th>
+					      <th scope="col">City</th>
+					      <th scope="col">State</th>
+					      <th scope="col">PIN Code</th>
+					    </tr>
+					  </thead>
+					  <tbody>
+					    <tr>
+					      <th scope="row">{{ obj.location_name }}</th>
+					      <td>{{ obj.location_city }}</td>
+					      <td>{{ obj.location_state }}</td>
+					      <td>{{ obj.location_pin_code }}</td>
+					    </tr>
+					  </tbody>
+					</table>
+
+				    <div class="card-footer">
+				    	<center>
+				    		<a href="{% url 'location' %}" class="btn btn-lg btn-info c-shadow-small-h">Explore Destination</a>
+				    	</center>
+				    </div>
+				  </div>
+
+			</div>
+		</div>
+	</div>
+	<br>
+	<hr>
+	{% if name_of_page == 'Book an Location' %}
+	<br>
+	<h6><strong>More Locations like this:</strong></h6>
+	<div class="row">
+		<div class="col-md-4 my-3">
+			<div class="card-group c-shadow-small-h">
+				  <div class="card">
+				    <img src="{{ location_1.location_image.url }}" class="card-img-top" alt="{{ location_1.location_name }}" height="150px">
+				    <div class="card-body">
+				      <h5 class="card-title"><strong>{{ location_1.location_name }}</strong></h5>
+				      <p class="card-text">{{ location_1.location_description|striptags|slice:":40" }}</p>
+				      <p class="card-text"><small class="text-muted">Situated in {{ location_1.location_city }}, {{ location_1.location_state }}</small></p>
+				    </div>
+				    <div class="card-footer">
+				    	<a href="{% url 'location_detail' obj.pk %}" target="_blank" class="btn btn-block btn-info c-shadow-small-h">Know more</a>
+				    </div>
+				  </div>
+
+			</div>
+		</div>
+		<div class="col-md-4 my-3">
+			<div class="card-group c-shadow-small-h">
+				  <div class="card">
+				    <img src="{{ location_2.location_image.url }}" class="card-img-top" alt="{{ location_2.location_name }}" height="150px">
+				    <div class="card-body">
+				      <h5 class="card-title"><strong>{{ location_2.location_name }}</strong></h5>
+				      <p class="card-text">{{ location_2.location_description|striptags|slice:":40" }}</p>
+				      <p class="card-text"><small class="text-muted">Situated in {{ location_2.location_city }}, {{ location_2.location_state }}</small></p>
+				    </div>
+				    <div class="card-footer">
+				    	<a href="{% url 'location_detail' obj.pk %}" target="_blank" class="btn btn-block btn-info c-shadow-small-h">Know more</a>
+				    </div>
+				  </div>
+
+			</div>
+		</div>
+		<div class="col-md-4 my-3">
+			<div class="card-group c-shadow-small-h">
+				  <div class="card">
+				    <img src="{{ location_3.location_image.url }}" class="card-img-top" alt="{{ location_3.location_name }}" height="150px">
+				    <div class="card-body">
+				      <h5 class="card-title"><strong>{{ location_3.location_name }}</strong></h5>
+				      <p class="card-text">{{ location_3.location_description|striptags|slice:":40" }}</p>
+				      <p class="card-text"><small class="text-muted">Situated in {{ location_3.location_city }}, {{ location_3.location_state }}</small></p>
+				    </div>
+				    <div class="card-footer">
+				    	<a href="{% url 'location_detail' obj.pk %}" target="_blank" class="btn btn-block btn-info c-shadow-small-h">Know more</a>
+				    </div>
+				  </div>
+
+			</div>
+		</div>
+	</div>
+	<br>
+
+	<hr>
+	<br>
+	{% else %}
+	<h6><strong>More Events like this:</strong></h6>
+	<div class="row">
+		<div class="col-md-4 my-3">
+			<div class="card-group c-shadow-small-h">
+				  <div class="card">
+				    <img src="{{ event_1.event_image.url }}" class="card-img-top" alt="{{ event_1.event_name }}" height="150px">
+				    <div class="card-body">
+				      <h5 class="card-title"><strong>{{ event_1.event_name }}</strong></h5>
+				      <p class="card-text">{{ event_1.event_description|striptags|slice:":40" }}</p>
+				      <p class="card-text"><small class="text-muted">Last updated {{ event_1.updated_date|timesince }} ago</small></p>
+				    </div>
+				    <div class="card-footer">
+				    	<a href="{% url 'event_detail' event_1.pk %}" target="_blank" class="btn btn-block btn-info c-shadow-small-h">Know more</a>
+				    </div>
+				  </div>
+
+			</div>
+		</div>
+		<div class="col-md-4 my-3">
+			<div class="card-group c-shadow-small-h">
+				  <div class="card">
+				    <img src="{{ event_2.event_image.url }}" class="card-img-top" alt="{{ event_2.event_name }}" height="150px">
+				    <div class="card-body">
+				      <h5 class="card-title"><strong>{{ event_2.event_name }}</strong></h5>
+				      <p class="card-text">{{ event_2.event_description|striptags|slice:":40" }}</p>
+				      <p class="card-text"><small class="text-muted">Last updated {{ event_2.updated_date|timesince }} ago</small></p>
+				    </div>
+				    <div class="card-footer">
+				    	<a href="{% url 'event_detail' event_2.pk %}" target="_blank" class="btn btn-block btn-info c-shadow-small-h">Know more</a>
+				    </div>
+				  </div>
+
+			</div>
+		</div>
+		<div class="col-md-4 my-3">
+			<div class="card-group c-shadow-small-h">
+				  <div class="card">
+				    <img src="{{ event_3.event_image.url }}" class="card-img-top" alt="{{ event_3.event_name }}" height="150px">
+				    <div class="card-body">
+				      <h5 class="card-title"><strong>{{ event_3.event_name }}</strong></h5>
+				      <p class="card-text">{{ event_3.event_description|striptags|slice:":40" }}</p>
+				      <p class="card-text"><small class="text-muted">Last updated {{ event_3.updated_date|timesince }} ago</small></p>
+				    </div>
+				    <div class="card-footer">
+				    	<a href="{% url 'event_detail' event_3.pk %}" target="_blank" class="btn btn-block btn-info c-shadow-small-h">Know more</a>
+				    </div>
+				  </div>
+
+			</div>
+		</div>
+	</div>
+	{% endif %}
+</div>
+
+	{% else %}
+	<p class="lead">Sorry some internal error occured, please try after some time.</p>
+	{% endif %}
+</div>
+
+</div>
+
+{% endblock content %}

@@ -1,0 +1,40 @@
+{% extends 'base_core.html' %}
+
+
+{% block title %}
+Your upcoming and past appointments.
+{% endblock title %}
+
+
+{% block content %}
+<div class="container-fluid c-shadow-medium-s c-content-back c-margin-top-resp pt-5" style="min-height: 600px; margin-bottom: 50px; margin-top: 100px;">
+	{% block breadcrumb %}
+
+        {% endblock breadcrumb %}
+    <div class="row">
+    	<div class="col-md-9">
+    		<h2 class="display-4">Your appointments</h2>
+    		<br>
+    		<hr>
+    		<br>
+    		<div class="">
+    			<img src="https://i.ytimg.com/vi/iSD9Zroim7Q/maxresdefault.jpg" alt="" width="100%">
+    		</div>
+    		<br>
+    		<br>
+    		<p class="lead">“Need is the mother of invention”<br>
+In this era of technology we are growing rapidly on all the sectors with the help of computer science. So we are the student of computer science and engineering develop a pathway or a method which provide ease to the patient in those who are need a doctor for consultation and dignosis of the issues but they can’t reach because of various reasons.
+<br>
+As we all know humans been are the social animal the thing which make us differ from the other animal is our social behaviour and our intelligence.<br>
+There are so many problems but we are planning for the basic problems and the one major problem to solve.<br>
+In india everyone become a doctor at home which sometime cause issue which is very critical also.
+The symptoms and signs of other disease are shown easily by the non medical person
+But due to the lack of awareness of the some diseases cause serious issue.<br>
+</p>
+    	</div>
+    	<div class="col-md-3">
+    		{% include 'includes/mainsidebar.html' %}
+    	</div>
+    </div>
+</div>
+{% endblock content %}

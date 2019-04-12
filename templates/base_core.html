@@ -1,0 +1,95 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+  {% block head %}
+  	{% block meta %}
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>ManEVE | {% block title %}{% endblock title %}</title>
+
+    <link rel="shortcut icon" type="image/png" href="https://upload.wikimedia.org/wikipedia/en/2/2e/Hemwati_Nandan_Bahuguna_Garhwal_University_logo.jpg">
+    {% endblock meta %}
+
+
+
+	{% block css %}
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
+
+    <!-- Font Awesome web font CSS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+    <!-- Google's Roboto Font -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito|Roboto" rel="stylesheet">
+
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style_sec.css' %}">
+
+    {% block extra %}
+    {% endblock extra %}
+    {% endblock css %}
+
+  {% endblock head %}
+  </head>
+
+  <body>
+
+    {% block body %}
+
+    {% block navbar %}
+
+        {% include 'includes/navbar.html' %}
+
+    {% endblock navbar %}
+
+    <!-- *************************************************** -->
+
+
+
+    
+<!-- <div class="container-fluid c-shadow-medium-s c-content-back c-margin-top-resp pt-5" style="min-height: 1300px; margin-bottom: 200px; margin-top: 100px;"> -->
+    {% block content %}
+    
+    
+    {% endblock content %}
+<!-- </div> -->
+
+
+    <!-- *************************************************** -->
+
+    {% block footer %}
+
+    <footer class="but-b pt-3" style="height: 60px;">
+        {% include 'includes/footer.html' %}
+    </footer>
+    
+    {% endblock footer %}
+
+
+	{% block javascript %}
+    <!-- Optional JavaScript -->
+
+    <script src="{% static 'js/script.js' %}" type="text/javascript" charset="utf-8" async defer></script>
+
+    <!-- Font Awesome SVGs custom JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.6.3/js/all.js" integrity="sha384-EIHISlAOj4zgYieurP0SdoiBYfGJKkgWedPHH4jCzpCXLmzVsw1ouK59MuUtP4a1" crossorigin="anonymous"></script>
+
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
+
+    <script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/popper.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+
+    {% endblock javascript %}
+
+    {% endblock body %}
+
+  </body>
+</html>
