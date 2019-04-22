@@ -27,3 +27,15 @@ class FeedbackForm(forms.ModelForm):
     class Meta:
         model = Feedback
         fields = ('email', 'name', 'message', 'rating')
+
+
+class BookEventForm(forms.ModelForm):
+    class Meta:
+        model = EventBook
+        fields = ('event', 'name_of_recipient', 'email_of_recipient', 'message_of_recipient')
+
+
+class BookLocationForm(forms.ModelForm):
+    class Meta:
+        model = LocationBook
+        fields = ('location', 'name_of_recipient', 'email_of_recipient', 'message_of_recipient')

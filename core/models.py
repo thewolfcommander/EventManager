@@ -14,7 +14,7 @@ class Event(models.Model):
 	event_added_by = models.ForeignKey(User, on_delete=models.CASCADE, help_text="This is the person who have added the event to the database")
 
 	def __str__(self):
-		return self.event_name
+		return "%s - %s"%(self.id, self.event_name)
 
 class Location(models.Model):
 	"""
@@ -64,6 +64,11 @@ class ProblemReport(models.Model):
 
 class EventBook(models.Model):
 	event = models.ForeignKey(Event, on_delete=models.CASCADE, help_text="This is the event information from the database")
+	name_of_recipient = models.CharField(max_length=255, blank=True, help_text="This is the reciepient's name who want to book the event.")
+	email_of_recipient = models.CharField(max_length=255, blank=True, help_text="This is the reciepient's email who want to book the event.")
+	message_of_recipient = models.CharField(max_length=1500, blank=True, help_text="This is the message of recipient that wants to ")
+
+class LocationBook(models.Model):
 	location = models.ForeignKey(Location, on_delete=models.CASCADE, help_text="This is the location information from the database")
 	name_of_recipient = models.CharField(max_length=255, blank=True, help_text="This is the reciepient's name who want to book the event.")
 	email_of_recipient = models.CharField(max_length=255, blank=True, help_text="This is the reciepient's email who want to book the event.")

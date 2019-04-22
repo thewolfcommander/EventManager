@@ -79,8 +79,16 @@ def feedback(request):
 
 @login_required
 def book_now_event(request, pk=None, *args, **kwargs):
-    name_of_page = 'Book an event'
-    qs = list(Event.objects.all())
+    qs = Event.objects.all()
+    if request.method == 'POST':
+        form = BookEventForm(request.POST)
+        if form.is_valid():
+            form.save(commit=False)
+            form.events = Event.objects.get(pk=pk)
+            form.save()
+            return redirect('event')
+    else:
+        form = BookEventForm()
     try:
         object_1 = random.randint(0, len(qs)-1)
         object_2 = random.randint(0, len(qs)-1)
@@ -91,30 +99,37 @@ def book_now_event(request, pk=None, *args, **kwargs):
             object_1 = random.randint(0, len(qs)-1)
         else:
             object_2 = random.randint(0, len(qs)-1)
+        obj = Event.objects.get(pk=pk)
         event_1 = qs[object_1]
         event_2 = qs[object_2]
         event_3 = qs[object_3]
-        obj = Event.objects.get(pk=pk)
         context = {
-            'qs': qs,
             'obj': obj,
-            'name_of_page': name_of_page,
+            'form': form,
             'event_1': event_1,
             'event_2': event_2,
             'event_3': event_3,
         }
-        return render(request, 'event_detail.html', context)
+        return render(request, 'book_now_event.html', context)
     except IndexError:
         print("Index out of Range")
         context = {
             'obj': obj,
         }
-        return render(request, 'event_detail.html', context)
+        return render(request, 'book_now_event.html', context)
 
 @login_required
 def book_now_location(request, pk=None, *args, **kwargs):
-    name_of_page = 'Book an Location'
-    qs = list(Location.objects.all())
+    qs = Location.objects.all()
+    if request.method == 'POST':
+        form = BookLocationForm(request.POST)
+        if form.is_valid():
+            form.save(commit=False)
+            form.events = Location.objects.get(pk=pk)
+            form.save()
+            return redirect('location')
+    else:
+        form = BookLocationForm()
     try:
         object_1 = random.randint(0, len(qs)-1)
         object_2 = random.randint(0, len(qs)-1)
@@ -125,17 +140,16 @@ def book_now_location(request, pk=None, *args, **kwargs):
             object_1 = random.randint(0, len(qs)-1)
         else:
             object_2 = random.randint(0, len(qs)-1)
-        location_1 = qs[object_1]
-        location_2 = qs[object_2]
-        location_3 = qs[object_3]
         obj = Location.objects.get(pk=pk)
+        event_1 = qs[object_1]
+        event_2 = qs[object_2]
+        event_3 = qs[object_3]
         context = {
-            'qs': qs,
             'obj': obj,
-            'location_1': location_1,
-            'location_2': location_2,
-            'location_3': location_3,
-            'name_of_page': name_of_page,
+            'form': form,
+            'event_1': event_1,
+            'event_2': event_2,
+            'event_3': event_3,
         }
         return render(request, 'book_now.html', context)
     except IndexError:
