@@ -12,7 +12,7 @@ django-tag-parser==3.1
 django-template-analyzer==1.6.1
 django-templated-mail==1.1.1
 django-widget-tweaks==1.4.3
-djangorestframework==3.9.0
+djangorestframework==3.11.2
 djoser==1.4.0
 future==0.17.1
 gunicorn==19.9.0
